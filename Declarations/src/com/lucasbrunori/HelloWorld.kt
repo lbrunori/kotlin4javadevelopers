@@ -22,6 +22,20 @@ fun main(args: Array<String>) {
     println(employeeFour != employeeThree)
     println(employeeFour !== employeeThree)
 
+    val x = 0b0010
+    val y = 0b0011
+
+    println(x)
+    println(y)
+    println(x or y)
+    println(x and y)
+    println(x xor y)
+
+    val something: Any = employeeFour
+    if(something is Employee){
+      //val newEmployee = something //actually not needed as Employee
+        println(something.name)
+    }
 
     var number: Int
     number = 10
