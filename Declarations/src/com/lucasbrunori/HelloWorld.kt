@@ -48,10 +48,14 @@ fun main(args: Array<String>) {
      var employee1 = Employee("Lynn Jones", 500);
     employee1.name = "Lynn Smith"
 
+    println(employee1)
+
     val employee2: Employee
     val number2 = 10
 
-
+    val change = 4.22
+    println("Your change is $change")
+    println("Your change is $$change")
 
     if(number < number2){
         employee2 = Employee("Jane Smith", 1000)
@@ -62,6 +66,12 @@ fun main(args: Array<String>) {
     val employees : EmployeeSet
 
     println(employee2)
+
+    val numerator = 10.99
+    val denominator = 20.00
+    println("The value of $numerator divided by $denominator is ${numerator/denominator}")
+
+    println("The employee's id is ${employee1.id}")
 }
 
 class Employee(var name: String, val id: Int){
